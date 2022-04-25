@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <style>
+        #grid {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <script src="langton.js"></script>
+</head>
+
+<body>
+    <h1>Langton's Ant</h1>
+    <canvas id="grid" width="1000" height="1000"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const langton = new Langton();
+            langton.play();
+        })
+    </script>
+</body>
+
+</html>
